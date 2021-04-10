@@ -37,7 +37,10 @@ class Create_Menu:
                 list_prod.append(prod.lower())
             product = products.select_products()
 
-            if set( list_prod ).intersection( set( product ) ):
+            res = [i for i in list_prod if i in product]
+            print(res)
+
+            if res == list_prod:
                 query = f"INSERT INTO recipe (recipe, products_id, products) VALUES (\'{dish}\', \'{products_id}\', \'{json.dumps(list_prod)}\');"                    
                 self.__db.execute(query)
                 
