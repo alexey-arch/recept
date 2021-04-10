@@ -1,0 +1,2 @@
+class UserInputTextException(Exception):
+    pass

@@ -1,0 +1,7 @@
+RECIPE_LIST = '1'
+CREATE_RECIPE = '2'
+DELETE_RECIPE = '3'
+ADD_ING = '4'
+BACK = '5'
+EXIT = '0'
+
